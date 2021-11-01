@@ -1,24 +1,13 @@
 #print receipt for customers after 40% discount
 #import input.txt doc for transaction id, name, total before discount
 
-import input
-def menu():
-    choice = 0
-    print('1: Print Transaction ID and username \n2: Print username and total before and after discount \n3: Quit')
-    while choice < 1 or choice > 3:
-        try:
-            choice = int(input('Enter your choice: '))
-            if choice < 1 or choice > 3:
-                print('Enter valid option')
-        except:
-            print('Enter your choice: ')
-    return choice
+#import input
 
 def read_file():
     file_name = 'input.txt'
     while True:
         user_file = input('Enter file name: ')
-        if user_file.lower() = file_name:
+        if user_file.lower() == file_name:
             break
         else:
             print('Enter correct file name')
@@ -33,4 +22,27 @@ def read_file():
         print('Enter correct file name')
 
 
-
+def main():
+    choice = int(input('1: Print Transaction ID and Username \n2: Print username, total before and total after discount \n3: Quit'))
+                 
+    if choice == 1:
+        file_data = read_file()
+        print('ID \tFirst Name \tLast Name \tBefore \tAfter')
+        print(file_data[0])
+        print(file_data[1])
+        print(file_data[2])
+        print(file_data[3])
+        print(file_data[4])
+                 
+    elif choice == 2:
+        file_data = read_file()
+        print('ID \tFirst Name \tLast Name \tBefore \tAfter')
+        print(file_data[0])
+        print(file_data[1])
+        print(file_data[2])
+        print(file_data[3])
+        print(file_data[4])
+        
+    elif choice == 3:
+        print('Have a great day')
+main()
