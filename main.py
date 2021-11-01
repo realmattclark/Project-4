@@ -13,8 +13,8 @@ def read_file():
             print('Enter correct file name')
     file_data = []
     try:
-        with open(user_file, 'r') as f:
-            data = f.read().split('\n')
+        with open(user_file, 'r'):
+            data = file_data.read().split('\n')
             for i in data:
                 data.append(i)
         return data
@@ -37,11 +37,12 @@ def main():
     elif choice == 2:
         file_data = read_file()
         print('ID \tFirst Name \tLast Name \tBefore \tAfter')
-        print(file_data[0])
-        print(file_data[1])
-        print(file_data[2])
-        print(file_data[3])
-        print(file_data[4])
+        print((file_data[0] * .4), file_date[0])
+        print((file_data[1] * .4), file_date[1])
+        print((file_data[2] * .4), file_date[2])
+        print((file_data[3] * .4), file_date[3])
+        print((file_data[4] * .4), file_date[4])
+
         
     elif choice == 3:
         print('Have a great day')
