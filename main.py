@@ -1,7 +1,7 @@
 #print receipt for customers after 40% discount
 #import input.txt doc for transaction id, name, total before discount
 
-import file
+#import file.txt
 
 def read_file():
     file_name = 'file.txt'
