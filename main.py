@@ -1,10 +1,10 @@
 #print receipt for customers after 40% discount
 #import input.txt doc for transaction id, name, total before discount
 
-#import input
+import file
 
 def read_file():
-    file_name = 'input.txt'
+    file_name = 'file.txt'
     while True:
         user_file = input('Enter file name: ')
         if user_file.lower() == file_name:
